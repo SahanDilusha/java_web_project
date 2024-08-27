@@ -38,3 +38,7 @@ h1{
 .item-title{
     margin-bottom: 10px;
 }
+
+.error-text{
+    color: red;
+}

@@ -30,13 +30,11 @@ public class User_Registration extends HttpServlet {
         HashMap<String, User> userMap = (HashMap<String, User>) request.getServletContext().getAttribute("userMap");
         
         if (userMap.containsKey(mobile)) {
-            response.sendRedirect("user_registration.jsp");
+            response.sendRedirect("user_registration.jsp?msg=error1");
         }else{
               User user = new User(mobile, name, gender, country, password);
               userMap.put(mobile, user);
-              
-              
-              
+              response.sendRedirect("login.jsp");       
         }
         
       
