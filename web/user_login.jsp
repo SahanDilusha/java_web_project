@@ -11,8 +11,8 @@
 
         <h1>User Login</h1>
       
-        <c:if test="${param.msg=='error1'}">
-            <p class="error-text">Mobile number already used!</p>
+        <c:if test="${param.msg=='error2'}">
+            <p class="error-text">Invalid Login Details!</p>
         </c:if>
 
         <form action="User_Login" method="POST">

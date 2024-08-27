@@ -8,11 +8,7 @@ public class User implements Serializable {
 
     }
 
-    public User(String mobile,
-            String name,
-            String gender,
-            String country,
-            String password) {
+    public User(String mobile,String name,String gender,String country,String password) {
 
         this.name = name;
         this.mobile = mobile;
