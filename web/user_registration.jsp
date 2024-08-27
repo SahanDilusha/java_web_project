@@ -10,7 +10,7 @@
     <body>
 
         <h1>User Registration</h1>
-      
+
         <c:if test="${param.msg=='error1'}">
             <p class="error-text">Mobile number already used!</p>
         </c:if>
@@ -50,6 +50,7 @@
             </div>
 
             <input type="submit" value="Create Account" class="text-input"/>
+            <a href="user_login.jsp">Login?</a>
 
         </form>
 

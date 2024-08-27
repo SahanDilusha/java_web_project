@@ -27,8 +27,8 @@
                 <input type="password" name="password" class="text-input">
             </div>
 
-            <input type="submit" value="Create Account" class="text-input"/>
-
+            <input type="submit" value="Login" class="text-input"/>
+            <a href="user_registration.jsp">Create Account?</a>
         </form>
 
     </body>
