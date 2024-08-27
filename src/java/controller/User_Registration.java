@@ -12,10 +12,10 @@ import model.User;
 
 @WebServlet(name = "User_Registration", urlPatterns = {"/User_Registration"})
 public class User_Registration extends HttpServlet {
-
+    
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse resp) throws ServletException, IOException {
-
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        
         String mobile = request.getParameter("mobile");
         String name = request.getParameter("name");
         String gender = request.getParameter("gender");
@@ -27,11 +27,20 @@ public class User_Registration extends HttpServlet {
 //        System.out.println(gender);
 //        System.out.println(country);
 //        System.out.println(password);
-
-        HashMap<String,User> userMap = (HashMap<String, User>) request.getServletContext().getAttribute("userMap");
-
-        User user = new User(mobile, name, gender, country, password);
-
+        HashMap<String, User> userMap = (HashMap<String, User>) request.getServletContext().getAttribute("userMap");
+        
+        if (userMap.containsKey(mobile)) {
+            response.sendRedirect("user_registration.jsp");
+        }else{
+              User user = new User(mobile, name, gender, country, password);
+              userMap.put(mobile, user);
+              
+              
+              
+        }
+        
+      
+        
     }
-
+    
 }
