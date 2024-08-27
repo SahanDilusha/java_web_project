@@ -12,10 +12,13 @@ import javax.servlet.http.HttpServletResponse;
 public class User_Login extends HttpServlet {
 
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+        String mobile = request.getParameter("mobile");
+        String password = request.getParameter("password");
+        
+        
 
     }
-
-    
 
 }

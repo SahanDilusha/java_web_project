@@ -34,7 +34,7 @@ public class User_Registration extends HttpServlet {
         }else{
               User user = new User(mobile, name, gender, country, password);
               userMap.put(mobile, user);
-              response.sendRedirect("login.jsp");       
+              response.sendRedirect("user_login.jsp");       
         }
         
       
