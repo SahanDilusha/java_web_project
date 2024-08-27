@@ -4,45 +4,46 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>User Registration</title>
+        <link rel="stylesheet" href="css/style.css"/>
     </head>
     <body>
 
         <h1>User Registration</h1>
 
-        <form action="action" method="POST">
+        <form action="User_Registration" method="POST">
 
-            <div>
+            <div class="item-div">
                 <div>Mobile</div>
-                <input type="text" name="mobile">
+                <input type="text" name="mobile" class="text-input">
             </div>
 
-            <div>
+            <div class="item-div">
                 <div>Name</div>
-                <input type="text" name="name">
+                <input type="text" name="name" class="text-input">
             </div>
 
-            <div>
+            <div class="item-div">
                 <div>Gender</div>
                 <div>
-                    <input <input type="radio"  name="gender" value="male"><samp>Male</samp>
-                    <input <input type="radio"  name="gender" value="female"><samp>Female</samp>
+                    <input type="radio"  name="gender" value="male"><samp>Male</samp>
+                    <input type="radio"  name="gender" value="female"><samp>Female</samp>
                 </div>
             </div>
 
-            <div>
+            <div class="item-div">
                 <div>Country</div>
-                <section name = "country">
+                <select name = "country" class="text-input">
                     <option value="Sri Lanka">Sri Lanka</option>
                     <option value="Australia">Australia</option>
                     <option value="Japan">Japan</option>
-                </section>
+                </select>
             </div>
 
-            <div>
+            <div class="item-div">
                 <div>Password</div>
-                <input type="password" name="password">
+                <input type="password" name="password" class="text-input">
             </div>
-            
+
             <input type="submit" value="Create Account" />
 
         </form>
