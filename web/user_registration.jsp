@@ -23,12 +23,12 @@
             </div>
 
             <div class="item-div">
-                <div>Name</div>
+                <div class="item-title">Name</div>
                 <input type="text" name="name" class="text-input">
             </div>
 
             <div class="item-div">
-                <div>Gender</div>
+                <div class="item-title">Gender</div>
                 <div>
                     <input type="radio"  name="gender" value="male"><samp>Male</samp>
                     <input type="radio"  name="gender" value="female"><samp>Female</samp>
@@ -36,7 +36,7 @@
             </div>
 
             <div class="item-div">
-                <div>Country</div>
+                <div class="item-title">Country</div>
                 <select name = "country" class="text-input">
                     <option value="Sri Lanka">Sri Lanka</option>
                     <option value="Australia">Australia</option>
@@ -45,7 +45,7 @@
             </div>
 
             <div class="item-div">
-                <div>Password</div>
+                <div class="item-title">Password</div>
                 <input type="password" name="password" class="text-input">
             </div>
 

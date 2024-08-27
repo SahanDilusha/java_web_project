@@ -23,7 +23,7 @@
             </div>
 
             <div class="item-div">
-                <div>Password</div>
+                <div class="item-title">Password</div>
                 <input type="password" name="password" class="text-input">
             </div>
 
