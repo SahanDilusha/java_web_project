@@ -2,6 +2,7 @@ package controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.HashMap;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -26,6 +27,8 @@ public class User_Registration extends HttpServlet {
 //        System.out.println(gender);
 //        System.out.println(country);
 //        System.out.println(password);
+
+        HashMap<String,User> userMap = (HashMap<String, User>) request.getServletContext().getAttribute("userMap");
 
         User user = new User(mobile, name, gender, country, password);
 

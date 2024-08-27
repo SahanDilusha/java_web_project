@@ -11,8 +11,8 @@ public class Listener1 implements ServletContextListener{
     @Override
     public void contextInitialized(ServletContextEvent sce) {
 
-        HashMap<String,User> userList = new HashMap<String, User>();
-        sce.getServletContext().setAttribute("userList", userList);
+        HashMap<String,User> userMap = new HashMap<String, User>();
+        sce.getServletContext().setAttribute("userMap", userMap);
         
     }
 

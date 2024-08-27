@@ -13,7 +13,7 @@
         <form action="User_Registration" method="POST">
 
             <div class="item-div">
-                <div>Mobile</div>
+                <div class="item-title">Mobile</div>
                 <input type="text" name="mobile" class="text-input">
             </div>
 
@@ -44,7 +44,7 @@
                 <input type="password" name="password" class="text-input">
             </div>
 
-            <input type="submit" value="Create Account" class="btn"/>
+            <input type="submit" value="Create Account" class="text-input"/>
 
         </form>
 
