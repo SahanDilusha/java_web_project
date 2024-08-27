@@ -1,6 +1,6 @@
 package model;
 
-import java.util.ArrayList;
+import java.util.HashMap;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
@@ -11,7 +11,7 @@ public class Listener1 implements ServletContextListener{
     @Override
     public void contextInitialized(ServletContextEvent sce) {
 
-        ArrayList<User> userList = new ArrayList<User>();
+        HashMap<String,User> userList = new HashMap<String, User>();
         sce.getServletContext().setAttribute("userList", userList);
         
     }
