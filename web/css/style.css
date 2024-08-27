@@ -19,15 +19,20 @@ form{
 }
 
 h1{
-    
+    font-size: 30px;
 }
 
 .text-input{
     width: 100%;
-    height: 30px;
+    height: 40px;
     color: #000;
 }
 
 .item-div{
     margin-bottom: 10px;
+}
+
+.btn{
+     width: 100%;
+    height: 40px;
 }

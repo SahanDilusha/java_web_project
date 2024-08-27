@@ -44,7 +44,7 @@
                 <input type="password" name="password" class="text-input">
             </div>
 
-            <input type="submit" value="Create Account" />
+            <input type="submit" value="Create Account" class="btn"/>
 
         </form>
 
